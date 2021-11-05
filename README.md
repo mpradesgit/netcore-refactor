@@ -8,13 +8,13 @@ Hi and welcome to team Woffu. As you know, we are a company dedicated to solving
 
 - All allocations have an DaysToExpiration value which denotes the number of days the allocation expires
 - All allocations have an Availability value which denotes the number of days available for being requested
-- At the end of each day our system lowers Expiration value by 1 and increases Availability by 0.1 days for every allocation
+- At the end of each day our system lowers DaysToExpiration value by 1 and increases Availability by 0.1 for every allocation
 
 Pretty simple, right? Well, this is where it gets interesting:
 
 - Availability drops to 0 after the expiration date
 - The Availability of an allocation is never more than 20
-- For “Vacation” allocations, once the expiration date has passed, availability is not set to 0 but decreases by 0.1 day
+- For “Vacation” allocations, once the expiration date has passed, availability is not set to 0 but decreases by 0.1
 - "HomeWork" allocations actually decrease by 0.1 in Availability on each update.
 - The Availability of an allocation is never negative
 - "Sickness" never has to be expired or increases in Availability

@@ -32,7 +32,7 @@ Feel free to make any changes to the UpdateAvailability method and add any new c
 
 Just for clarification, an allocation can never have its Availability increased above 20, however "Sickness" is a legacy allocation and as such its Availability is 25 and it never alters.
 
-# Extra Credit
+## Extra Credit
 
 - Allocation categories are determined by whether they contain a given string in their name (e.g. "Vacation" or "Sickness" or "HomeWork")
 - Any allocation can thus be compensated, with the resulting effects (e.g. "Compensated Vacation")
